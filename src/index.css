@@ -96,7 +96,7 @@
 
   body {
     @apply bg-background text-foreground transition-colors duration-300;
-    font-feature-settings: "rlig" 1, calt "1";
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
@@ -132,7 +132,7 @@
 
 @utility gradient-border {
   @apply relative rounded-md;
-  background: linear-gradient(to right, hsl(var(--card), hsl(var(--card))));
+  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
   background-clip: padding-box;
   border: 1px solid transparent;
 }
@@ -145,12 +145,12 @@
 
 @utility star {
   @apply absolute rounded-full bg-white;
-  box_shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
-  box_shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
 #root {
