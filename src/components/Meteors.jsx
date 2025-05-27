@@ -15,10 +15,10 @@ export const Meteors = () => {
       newMeteors.push({
         id: i,
         size: Math.random() * 2 + 1,
-        x: Math.random() * 100,
-        y: Math.random() * 20,
-        delay: Math.random() * 15,
-        animationDuration: Math.random() * 3 + 3,
+        x: Math.random() * 80,
+        y: -5,
+        delay: Math.random() * 10 + 2,
+        animationDuration: Math.random() * 3 + 6,
       });
     }
 
@@ -36,7 +36,7 @@ export const Meteors = () => {
             height: meteor.size + "px",
             left: meteor.x + "%",
             top: meteor.y + "%",
-            animationDelay: meteor.delay,
+            animationDelay: meteor.delay + "s",
             animationDuration: meteor.animationDuration + "s",
           }}
         />
