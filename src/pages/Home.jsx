@@ -1,3 +1,4 @@
+import { Meteors } from "../components/Meteors";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground }from "@/components/StarBackground";
 
@@ -9,6 +10,7 @@ function Home() {
 
             {/* Background Effects */}
             <StarBackground />
+            <Meteors />
 
             {/* Navbar */}
 
