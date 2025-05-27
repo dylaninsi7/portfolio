@@ -5,6 +5,18 @@ export const StarBackground = () => {
 
   useEffect(() => {
     generateStars();
+
+    const handleResize = () => {    // Regenerate the amount of stars on resize
+      generateStars();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+        window.removeEventListener("resize", handleResize); // prevents memory leaks
+    };
+
+
   }, []);
 
   const generateStars = () => {
