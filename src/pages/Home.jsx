@@ -1,4 +1,5 @@
 import { Meteors } from "../components/Meteors";
+import { Navbar } from "../components/Navbar";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground }from "@/components/StarBackground";
 
@@ -13,6 +14,7 @@ function Home() {
             <Meteors />
 
             {/* Navbar */}
+            <Navbar />
 
             {/* Main Content */}
 
