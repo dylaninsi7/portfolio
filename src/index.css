@@ -160,3 +160,29 @@
   text-align: center;
 }
 
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -600px; 
+  }
+}
+
+.animate-autoRun {
+  animation: autoRun 20s linear infinite;
+}
+
+.slider-item {
+  transition: filter 0.5s;
+}
+
+.slider:hover .slider-item {
+  animation-play-state: paused;
+  filter: grayscale(1);
+}
+
+.slider:hover .slider-item:hover {
+  filter: grayscale(0);
+}
+
