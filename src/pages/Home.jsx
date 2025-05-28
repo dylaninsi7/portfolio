@@ -2,6 +2,7 @@ import { Meteors } from "../components/Meteors";
 import { Navbar } from "../components/Navbar";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground }from "@/components/StarBackground";
+import { HeroSection } from "../components/HeroSection";
 
 function Home() {
     return (
@@ -17,7 +18,9 @@ function Home() {
             <Navbar />
 
             {/* Main Content */}
-
+            <main>
+            <HeroSection />
+            </main>
             {/* Footer */}
 
 
