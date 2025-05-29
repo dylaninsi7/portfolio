@@ -159,28 +159,3 @@
   padding: 0;
   text-align: center;
 }
-
-
-.slider-item {
-  transition: filter 0.5s;
-}
-
-.slider:hover .slider-item {
-  animation-play-state: paused;
-  filter: grayscale(1);
-}
-
-.slider:hover .slider-item:hover {
-  filter: grayscale(0);
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.animate-marquee {
-  animation: marquee 30s linear infinite;
-}
-.animate-marquee:hover {
-  animation-play-state: paused;
-}
