@@ -45,7 +45,7 @@ export const SkillsSection = () => {
         >
           <Marquee
             speed={80}
-            pauseOnHover={false} // we handle pause manually
+            pauseOnHover={false} 
             pauseOnClick={false}
             play={!paused}
           >
