@@ -1,3 +1,5 @@
+import { Github } from "lucide-react";
+
 export const ProjectsSection = () => {
   const projects = [
     {
@@ -37,10 +39,19 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground">{tag}</span>
+                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground">
+                      {tag}
+                    </span>
                   ))}
-
                 </div>
+                <h3 className="text-xl font-semibold mb-2 u">
+                  {project.title}
+                </h3>
+                <div className="w-full h-0.75 bg-primary/20 rounded mb-3"></div>
+
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  {project.description}
+                </p>
               </div>
             </div>
           ))}
