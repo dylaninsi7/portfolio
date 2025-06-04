@@ -52,6 +52,17 @@ export const ProjectsSection = () => {
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-3">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={20} />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
