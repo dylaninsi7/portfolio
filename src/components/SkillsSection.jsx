@@ -24,7 +24,7 @@ export const SkillsSection = () => {
 
   return (
     <section className="py-16 px-2" id="skills">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+      <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
         My <span className="text-primary"> Skills</span>
       </h2>
       <div
@@ -36,7 +36,7 @@ export const SkillsSection = () => {
             "linear-gradient(to right, transparent 0%, black 16%, black 80%, transparent 100%)",
         }}
       >
-        <div
+        <div className="mt-8"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => {
             setPaused(false);
@@ -45,7 +45,7 @@ export const SkillsSection = () => {
         >
           <Marquee
             speed={80}
-            pauseOnHover={false} 
+            pauseOnHover={false}
             pauseOnClick={false}
             play={!paused}
           >
@@ -62,9 +62,9 @@ export const SkillsSection = () => {
                   className={
                     paused
                       ? hovered === idx
-                        ? "w-30 h-30 object-contain transition duration-200"
-                        : "w-28 h-28 object-contain transition duration-200 grayscale"
-                      : "w-28 h-28 object-contain transition duration-200"
+                        ? "w-30 h-30 object-contain transition duration-300"
+                        : "w-28 h-28 object-contain transition duration-300 grayscale"
+                      : "w-28 h-28 object-contain transition duration-300"
                   }
                   draggable={false}
                 />
@@ -72,6 +72,17 @@ export const SkillsSection = () => {
             ))}
           </Marquee>
         </div>
+      </div>
+      <div>
+        <h1 className="mx-auto pt-8 mt-8 text-center text-2xl font-semibold min-h-[4rem]">
+        {hovered !== null ? (
+          <span className="px-6 py-2 rounded-full border border-primary text-primary">
+          {skills[hovered].alt} 
+          </span>
+        ) : (
+          ""
+        )}
+        </h1>
       </div>
     </section>
   );
