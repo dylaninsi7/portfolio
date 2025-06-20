@@ -65,6 +65,7 @@
   :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
+    --muted-foreground: 225 16% 37%; 
 
     --card: 0 0% 100%;
 
@@ -77,6 +78,7 @@
   .dark {
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
+    --muted-foreground: 225 16% 75%;
 
     --card: 222 47% 8%;
 
@@ -85,6 +87,10 @@
 
     --border: 217 33% 20%;
   }
+
+  .text-muted-foreground {
+  color: hsl(var(--muted-foreground));
+}
 
   *  {
     @apply border-border;
