@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 
 export const ContactSection = () => {
   return (
@@ -23,10 +23,13 @@ export const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h4 className="font-medium"> Location</h4>
-                    <a href="mailto:dylaninsi7@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                        dylaninsi7@gmail.com
-                    </a>
+                  <h4 className="font-medium"> Location</h4>
+                  <a
+                    href="mailto:dylaninsi7@gmail.com"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    dylaninsi7@gmail.com
+                  </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -34,10 +37,13 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h4 className="font-medium"> Phone</h4>
-                    <a href="tell:+13163500625" className="text-muted-foreground hover:text-primary transition-colors">
-                        +1 (316) 350-0625
-                    </a>
+                  <h4 className="font-medium"> Phone</h4>
+                  <a
+                    href="tell:+13163500625"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    +1 (316) 350-0625
+                  </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -45,11 +51,31 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h4 className="font-medium"> Email</h4>
-                    <a className="text-muted-foreground hover:text-primary transition-colors">
-                        Wichita, KS, United States
-                    </a>
+                  <h4 className="font-medium"> Email</h4>
+                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                    Wichita, KS, United States
+                  </a>
                 </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-medium mb-4"> Connect With Me</h4>
+              <div className="flex space-x-4 justify-center">
+                <a
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  href="https://www.linkedin.com/in/dylan-insixiengmay"
+                  target="_blank"
+                >
+                  <Linkedin />
+                </a>
+                <a
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  href="https://github.com/dylaninsi7"
+                  target="_blank"
+                >
+                  <Github />
+                </a>
               </div>
             </div>
           </div>
